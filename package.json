@@ -1,0 +1,27 @@
+{
+  "name": "webpackangular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Addie",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "angular-aria": "^1.4.1",
+    "angular-formly": "^6.15.1",
+    "angular-formly-templates-bootstrap": "^4.3.2",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.5"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.1",
+    "babel-loader": "^5.1.4",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.11"
+  }
+}
