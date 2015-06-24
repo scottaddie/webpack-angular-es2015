@@ -2,7 +2,8 @@
 
 const HTTP = new WeakMap();
 
-class PersonFactory {
+export default class PersonFactory {
+	/* @ngInject */
 	constructor($http){
 		HTTP.set(this, $http);
 	}
@@ -14,11 +15,8 @@ class PersonFactory {
 		};
 	}
 	
+	/* @ngInject */
 	static Factory($http){
 		return new PersonFactory($http);
 	}
 }
-
-PersonFactory.$inject = ['$http'];
-
-export default PersonFactory;

@@ -42,6 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/*!***********************!*\
+  !*** ./app.module.js ***!
+  \***********************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50,29 +53,29 @@
 
 	// vendor module imports
 
-	var _npmAngular = __webpack_require__(3);
+	var _npmAngular = __webpack_require__(/*! npm/angular */ 3);
 
 	var _npmAngular2 = _interopRequireDefault(_npmAngular);
 
-	var _npmAngularFormly = __webpack_require__(5);
+	var _npmAngularFormly = __webpack_require__(/*! npm/angular-formly */ 5);
 
 	var _npmAngularFormly2 = _interopRequireDefault(_npmAngularFormly);
 
-	var _npmAngularFormlyTemplatesBootstrap = __webpack_require__(7);
+	var _npmAngularFormlyTemplatesBootstrap = __webpack_require__(/*! npm/angular-formly-templates-bootstrap */ 7);
 
 	var _npmAngularFormlyTemplatesBootstrap2 = _interopRequireDefault(_npmAngularFormlyTemplatesBootstrap);
 
-	var _npmAngularAria = __webpack_require__(1);
+	var _npmAngularAria = __webpack_require__(/*! npm/angular-aria */ 1);
 
 	var _npmAngularAria2 = _interopRequireDefault(_npmAngularAria);
 
-	var _npmAngularUiRouter = __webpack_require__(8);
+	var _npmAngularUiRouter = __webpack_require__(/*! npm/angular-ui-router */ 8);
 
 	var _npmAngularUiRouter2 = _interopRequireDefault(_npmAngularUiRouter);
 
 	// custom module imports
 
-	var _personPersonModule = __webpack_require__(9);
+	var _personPersonModule = __webpack_require__(/*! ./person/person.module */ 9);
 
 	var _personPersonModule2 = _interopRequireDefault(_personPersonModule);
 
@@ -85,14 +88,20 @@
 
 /***/ },
 /* 1 */
+/*!**********************************!*\
+  !*** ../~/angular-aria/index.js ***!
+  \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2);
+	__webpack_require__(/*! ./angular-aria */ 2);
 	module.exports = 'ngAria';
 
 
 /***/ },
 /* 2 */
+/*!*****************************************!*\
+  !*** ../~/angular-aria/angular-aria.js ***!
+  \*****************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -486,14 +495,20 @@
 
 /***/ },
 /* 3 */
+/*!*****************************!*\
+  !*** ../~/angular/index.js ***!
+  \*****************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(4);
+	__webpack_require__(/*! ./angular */ 4);
 	module.exports = angular;
 
 
 /***/ },
 /* 4 */
+/*!*******************************!*\
+  !*** ../~/angular/angular.js ***!
+  \*******************************/
 /***/ function(module, exports) {
 
 	/**
@@ -28793,13 +28808,16 @@
 
 /***/ },
 /* 5 */
+/*!******************************************!*\
+  !*** ../~/angular-formly/dist/formly.js ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	//! angular-formly version 6.15.1 built with ♥ by Astrism <astrisms@gmail.com>, Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
 
 	(function webpackUniversalModuleDefinition(root, factory) {
 		if(true)
-			module.exports = factory(__webpack_require__(3), __webpack_require__(6));
+			module.exports = factory(__webpack_require__(/*! angular */ 3), __webpack_require__(/*! api-check */ 6));
 		else if(typeof define === 'function' && define.amd)
 			define(["angular", "api-check"], factory);
 		else if(typeof exports === 'object')
@@ -30151,6 +30169,7 @@
 		      $scope.options.options.formState = $scope.formState;
 		    }
 		  }
+		  FormlyFieldController.$inject = ["$scope", "$timeout", "$parse", "$controller"];
 
 		  // link function
 		  function fieldLink(scope, el) {
@@ -30809,6 +30828,7 @@
 		      };
 		    }
 		  }
+		  FormlyFormController.$inject = ["$scope", "formlyApiCheck", "formlyUtil"];
 
 		  function formlyFormLink(scope, el, attrs) {
 		    setFormController();
@@ -31120,6 +31140,9 @@
 
 /***/ },
 /* 6 */
+/*!****************************************!*\
+  !*** ../~/api-check/dist/api-check.js ***!
+  \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	//! api-check version 7.4.0 built with ♥ by Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us) (ó ì_í)=óò=(ì_í ò)
@@ -32434,13 +32457,16 @@
 
 /***/ },
 /* 7 */
+/*!******************************************************************************************!*\
+  !*** ../~/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js ***!
+  \******************************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	// angular-formly-templates-bootstrap version 4.3.2 built with ♥ by Astrism <astrisms@gmail.com>, Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
 
 	(function webpackUniversalModuleDefinition(root, factory) {
 		if(true)
-			module.exports = factory(__webpack_require__(5), __webpack_require__(6), __webpack_require__(3));
+			module.exports = factory(__webpack_require__(/*! angular-formly */ 5), __webpack_require__(/*! api-check */ 6), __webpack_require__(/*! angular */ 3));
 		else if(typeof define === 'function' && define.amd)
 			define(["angular-formly", "api-check", "angular"], factory);
 		else if(typeof exports === 'object')
@@ -33031,6 +33057,9 @@
 
 /***/ },
 /* 8 */
+/*!***********************************************************!*\
+  !*** ../~/angular-ui-router/release/angular-ui-router.js ***!
+  \***********************************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -37406,6 +37435,9 @@
 
 /***/ },
 /* 9 */
+/*!*********************************!*\
+  !*** ./person/person.module.js ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37416,25 +37448,26 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _personController = __webpack_require__(10);
+	var _personController = __webpack_require__(/*! ./person.controller */ 10);
 
 	var _personController2 = _interopRequireDefault(_personController);
 
-	var _personFactory = __webpack_require__(11);
+	var _personFactory = __webpack_require__(/*! ./person.factory */ 11);
 
 	var _personFactory2 = _interopRequireDefault(_personFactory);
 
-	var _npmAngular = __webpack_require__(3);
+	var _npmAngular = __webpack_require__(/*! npm/angular */ 3);
 
 	var _npmAngular2 = _interopRequireDefault(_npmAngular);
 
-	var PersonModule = _npmAngular2['default'].module('app.person', []).controller('PersonController', _personController2['default']).factory('PersonFactory', _personFactory2['default'].Factory);
-
-	exports['default'] = PersonModule;
+	exports['default'] = _npmAngular2['default'].module('app.person', []).controller('PersonController', _personController2['default']).factory('PersonFactory', _personFactory2['default'].Factory);
 	module.exports = exports['default'];
 
 /***/ },
 /* 10 */
+/*!*************************************!*\
+  !*** ./person/person.controller.js ***!
+  \*************************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37447,22 +37480,25 @@
 
 	var FACTORY = new WeakMap();
 
-	var PersonController = function PersonController(PersonFactory) {
+	var PersonController =
+	/* @ngInject */
+	["PersonFactory", function PersonController(PersonFactory) {
 		_classCallCheck(this, PersonController);
 
 		FACTORY.set(this, PersonFactory);
 
 		var objPerson = FACTORY.get(this).getPerson();
 		this.FullName = objPerson.FirstName + ' ' + objPerson.LastName;
-	};
-
-	PersonController.$inject = ['PersonFactory'];
+	}];
 
 	exports['default'] = PersonController;
 	module.exports = exports['default'];
 
 /***/ },
 /* 11 */
+/*!**********************************!*\
+  !*** ./person/person.factory.js ***!
+  \**********************************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37478,11 +37514,14 @@
 	var HTTP = new WeakMap();
 
 	var PersonFactory = (function () {
+		/* @ngInject */
+
 		function PersonFactory($http) {
 			_classCallCheck(this, PersonFactory);
 
 			HTTP.set(this, $http);
 		}
+		PersonFactory.$inject = ["$http"];
 
 		_createClass(PersonFactory, [{
 			key: 'getPerson',
@@ -37494,18 +37533,19 @@
 			}
 		}], [{
 			key: 'Factory',
-			value: function Factory($http) {
+
+			/* @ngInject */
+			value: ["$http", function Factory($http) {
 				return new PersonFactory($http);
-			}
+			}]
 		}]);
 
 		return PersonFactory;
 	})();
-
-	PersonFactory.$inject = ['$http'];
 
 	exports['default'] = PersonFactory;
 	module.exports = exports['default'];
 
 /***/ }
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

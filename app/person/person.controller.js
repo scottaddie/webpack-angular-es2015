@@ -2,7 +2,8 @@
 
 const FACTORY = new WeakMap();
 
-class PersonController {
+export default class PersonController {
+	/* @ngInject */
 	constructor(PersonFactory){
 		FACTORY.set(this, PersonFactory);
 		
@@ -10,7 +11,3 @@ class PersonController {
 		this.FullName = `${objPerson.FirstName} ${objPerson.LastName}`;	
 	}
 }
-
-PersonController.$inject = ['PersonFactory'];
-
-export default PersonController;

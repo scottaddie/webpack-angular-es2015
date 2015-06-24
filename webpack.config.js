@@ -1,5 +1,7 @@
 'use strict';
 
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+
 module.exports = {
     context: __dirname + '/app',
     entry: './app.module.js',
@@ -17,9 +19,14 @@ module.exports = {
       loaders: [
         {
           test: /\.js?$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           loader: 'babel?stage=0!jshint'
         }
       ]
-    }
+    },
+    plugins: [
+        new ngAnnotatePlugin({
+            add: true,
+        })
+    ]    
 };
