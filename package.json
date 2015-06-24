@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d",
-    "dist": "webpack -p"
+    "dev": "webpack -d --display-modules --progress",
+    "dist": "webpack -p --display-modules --progress"
   },
   "author": "Scott Addie",
   "license": "MIT",
