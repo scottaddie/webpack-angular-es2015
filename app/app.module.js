@@ -10,13 +10,17 @@ import uiRouter from 'npm/angular-ui-router';
 // custom module imports
 import {default as PersonModule} from './person/person.module';
 
-angular.module('app', [
-	// vendor modules
-	ngAria,
-	uiRouter,
-	formly,
-	formlyBootstrap,
+angular
+	.module('app', [
+		// vendor modules
+		ngAria,
+		uiRouter,
+		formly,
+		formlyBootstrap,
 		
-	// custom modules
-	PersonModule.name
-]);
+		// custom modules
+		PersonModule.name
+	])
+	.config(['$compileProvider', function ($compileProvider) {
+		$compileProvider.debugInfoEnabled(false);
+	}]);
