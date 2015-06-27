@@ -8,6 +8,7 @@ import ngAria from 'npm/angular-aria';
 import uiRouter from 'npm/angular-ui-router';
 
 // custom module imports
+import {default as AppConfig} from './app.config';
 import {default as PersonModule} from './person/person.module';
 
 angular
@@ -21,6 +22,4 @@ angular
 		// custom modules
 		PersonModule.name
 	])
-	.config(['$compileProvider', function ($compileProvider) {
-		$compileProvider.debugInfoEnabled(false);
-	}]);
+	.config(AppConfig.disableDebugInfo);

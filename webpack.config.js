@@ -1,5 +1,6 @@
 'use strict';
 
+var cleanPlugin = require('clean-webpack-plugin');
 var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
@@ -20,11 +21,12 @@ module.exports = {
         {
           test: /\.js?$/,
           exclude: /node_modules/,
-          loader: 'babel?stage=0!jshint'
+          loader: 'babel?stage=4!jshint'
         }
       ]
     },
     plugins: [
+        new cleanPlugin(['dist']),
         new ngAnnotatePlugin({
             add: true,
         })
