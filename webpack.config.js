@@ -26,7 +26,7 @@ var config = {
         },
         { 
             test: /\.(woff|woff2)$/,   
-            loader: "url?limit=10000&minetype=application/font-woff" 
+            loader: "url?limit=10000&mimetype=application/font-woff" 
         },
         { 
             test: /\.(eot|svg|ttf)$/,    
