@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>WebPack, Angular, and ES 2015 Sample App</title>
   </head>
-  <body data-ng-app="app" data-ng-strict-di>
+  <body class="container hide" data-ng-app="app" data-ng-strict-di data-ng-class="{'show': loaded}" data-ng-init="loaded=true">
     <div data-ng-controller="PersonController as vm">
       {{::vm.FullName}}
     </div>

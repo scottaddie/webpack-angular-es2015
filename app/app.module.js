@@ -1,5 +1,7 @@
 'use strict';
 
+require('npm/bootstrap/dist/css/bootstrap.css');
+
 // vendor module imports
 import angular from 'npm/angular';
 import formly from 'npm/angular-formly';

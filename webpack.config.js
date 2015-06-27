@@ -1,9 +1,11 @@
 'use strict';
 
+// import Webpack plugins
 var cleanPlugin = require('clean-webpack-plugin');
 var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
-module.exports = {
+// define Webpack configuration object to be exported
+var config = {
     context: __dirname + '/app',
     entry: './app.module.js',
     output: {
@@ -18,6 +20,18 @@ module.exports = {
     },    
     module: {
       loaders: [
+        { 
+            test: /\.css$/, 
+            loader: "style!css"
+        },
+        { 
+            test: /\.(woff|woff2)$/,   
+            loader: "url?limit=10000&minetype=application/font-woff" 
+        },
+        { 
+            test: /\.(eot|svg|ttf)$/,    
+            loader: "file" 
+        },
         {
           test: /\.js?$/,
           exclude: /node_modules/,
@@ -32,3 +46,5 @@ module.exports = {
         })
     ]    
 };
+
+module.exports = config;
