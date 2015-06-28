@@ -1,13 +1,13 @@
 'use strict';
 
-const FACTORY = new WeakMap();
+const SERVICE = new WeakMap();
 
 export default class PersonController {
 	/* @ngInject */
-	constructor(PersonFactory){
-		FACTORY.set(this, PersonFactory);
+	constructor(PersonService){
+		SERVICE.set(this, PersonService);
 		
-		let objPerson = FACTORY.get(this).getPerson();
+		let objPerson = SERVICE.get(this).getPerson();
 		this.FullName = `${objPerson.FirstName} ${objPerson.LastName}`;	
 	}
 }

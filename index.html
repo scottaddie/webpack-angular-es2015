@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>WebPack, Angular, and ES 2015 Sample App</title>
+    <style>
+      [data-ng-cloak] {
+        display: none !important;
+      }      
+    </style>
   </head>
-  <body class="container hide" data-ng-app="app" data-ng-strict-di data-ng-class="{'show': loaded}" data-ng-init="loaded=true">
-    <div data-ng-controller="PersonController as vm">
+  <body class="container" data-ng-app="app" data-ng-strict-di>
+    <div data-ng-controller="PersonController as vm" data-ng-cloak>
       {{::vm.FullName}}
     </div>
     <script src="dist/bundle.js"></script>

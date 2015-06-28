@@ -2,21 +2,17 @@
 
 const HTTP = new WeakMap();
 
-export default class PersonFactory {
+export default class PersonService {
 	/* @ngInject */
 	constructor($http){
 		HTTP.set(this, $http);
 	}
 	
 	getPerson(){
+		// In a real app, you'd use $http in here to fetch data from server.
 		return {
 			FirstName: 'Scott',
 			LastName: 'Addie'
 		};
-	}
-	
-	/* @ngInject */
-	static Factory($http){
-		return new PersonFactory($http);
 	}
 }

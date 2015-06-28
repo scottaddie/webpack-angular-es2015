@@ -13,7 +13,6 @@ var config = {
         filename: 'bundle.js'
     },
     resolve: {
-        modulesDirectories: ['node_modules'],
         alias: {
           'npm': __dirname + '/node_modules'
         }
@@ -22,15 +21,15 @@ var config = {
       loaders: [
         { 
             test: /\.css$/, 
-            loader: "style!css"
+            loader: 'style!css'
         },
         { 
             test: /\.(woff|woff2)$/,   
-            loader: "url?limit=10000&mimetype=application/font-woff" 
+            loader: 'url?limit=10000&mimetype=application/font-woff' 
         },
         { 
             test: /\.(eot|svg|ttf)$/,    
-            loader: "file" 
+            loader: 'file' 
         },
         {
           test: /\.js?$/,
