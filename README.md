@@ -9,4 +9,8 @@ Angular 1.4 app using ES 2015 and Webpack
 3. Build the project according to your desired mode as follows:
   * Development Mode = `npm run dev-build`
   * Production Mode = `npm run dist-build`
-4. Open index.html in your browser of choice.
+<<<<<<< HEAD
+4. Open index.html in your browser of choice
+=======
+4. Open index.html in your browser of choice
+>>>>>>> f8dae4ac314665a24f9ffaedce5c071212d2c51e
