@@ -1,20 +1,20 @@
 'use strict';
 
 // import Webpack plugins
-var cleanPlugin = require('clean-webpack-plugin');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+const cleanPlugin = require('clean-webpack-plugin');
+const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 // define Webpack configuration object to be exported
-var config = {
-    context: __dirname + '/app',
+let config = {
+    context: `${__dirname}/app`,
     entry: './app.module.js',
     output: {
-        path: __dirname + '/dist',
+        path: `${__dirname}/dist`,
         filename: 'bundle.js'
     },
     resolve: {
         alias: {
-          'npm': __dirname + '/node_modules'
+          'npm': `${__dirname}/node_modules`
         }
     },    
     module: {
@@ -32,16 +32,16 @@ var config = {
             loader: 'file' 
         },
         {
-          test: /\.js?$/,
-          exclude: /node_modules/,
-          loader: 'babel?stage=4!jshint'
+            test: /\.js?$/,
+            exclude: /node_modules/,
+            loader: 'babel?stage=4!jshint'
         }
       ]
     },
     plugins: [
         new cleanPlugin(['dist']),
         new ngAnnotatePlugin({
-            add: true,
+            add: true
         })
     ]    
 };
