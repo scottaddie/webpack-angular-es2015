@@ -1,6 +1,8 @@
 # webpack-angular-es2015
 Angular 1.4 app using ES 2015 and Webpack
 
+An accompanying blog post can be found at: http://scottaddie.com/2015/06/29/webpackin-your-es-2015-angular-1-x-spa/
+
 ##Project Setup
 1. Install the WebPack CLI at the system level as follows:
   `npm install -g webpack`
