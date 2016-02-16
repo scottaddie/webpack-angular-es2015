@@ -12,8 +12,8 @@
   "dependencies": {
     "angular": "1.4.1",
     "angular-aria": "1.4.1",
-    "angular-formly": "6.15.1",
-    "angular-formly-templates-bootstrap": "4.3.2",
+    "angular-formly": "7.5.0",
+    "angular-formly-templates-bootstrap": "6.3.0",
     "angular-ui-router": "0.2.18",
     "api-check": "7.5.5",
     "bootstrap": "3.3.6"
@@ -25,11 +25,11 @@
     "clean-webpack-plugin": "0.1.8",
     "css-loader": "0.23.1",
     "file-loader": "0.8.5",
-    "jshint": "2.8.0",
+    "jshint": "2.9.1",
     "jshint-loader": "0.8.3",
-    "less": "2.5.1",
+    "less": "2.6.0",
     "ng-annotate-webpack-plugin": "0.1.2",
-    "node-libs-browser": "0.5.2",
+    "node-libs-browser": "1.0.0",
     "style-loader": "0.13.0",
     "url-loader": "0.5.7",
     "webpack": "1.12.13"
