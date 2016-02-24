@@ -1,8 +1,12 @@
 {
-  "name": "webpackangular",
+  "name": "webpack-angular",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/scottaddie/webpack-angular-es2015.git"
+  },
   "scripts": {
     "dev-build": "webpack -d --display-modules --progress",
     "dist-build": "webpack -p --display-modules --progress"
