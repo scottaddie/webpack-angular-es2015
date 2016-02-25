@@ -1,42 +1,43 @@
 {
-  "name": "webpack-angular",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/scottaddie/webpack-angular-es2015.git"
-  },
-  "scripts": {
-    "dev-build": "webpack -d --display-modules --progress",
-    "dist-build": "webpack -p --display-modules --progress"
-  },
-  "author": "Scott Addie",
-  "license": "MIT",
-  "dependencies": {
-    "angular": "1.5.0",
-    "angular-aria": "1.5.0",
-    "angular-formly": "7.5.0",
-    "angular-formly-templates-bootstrap": "6.3.0",
-    "angular-ui-router": "0.2.18",
-    "api-check": "7.5.5",
-    "bootstrap": "3.3.6"
-  },
-  "devDependencies": {
-    "babel": "6.5.2",
-    "babel-core": "6.5.2",
-    "babel-loader": "6.2.3",
-    "babel-preset-es2015": "6.5.0",
-    "clean-webpack-plugin": "0.1.8",
-    "css-loader": "0.23.1",
-    "file-loader": "0.8.5",
-    "jshint": "2.9.1",
-    "jshint-loader": "0.8.3",
-    "less": "2.6.0",
-    "ng-annotate-webpack-plugin": "0.1.2",
-    "node-libs-browser": "1.0.0",
-    "style-loader": "0.13.0",
-    "url-loader": "0.5.7",
-    "webpack": "1.12.14"
-  }
+    "name": "webpack-angular",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scottaddie/webpack-angular-es2015.git"
+    },
+    "scripts": {
+        "dev-build": "webpack -d --display-modules --progress",
+        "dist-build": "webpack -p --display-modules --progress",
+        "install": "typings i"
+    },
+    "author": "Scott Addie",
+    "license": "MIT",
+    "dependencies": {
+        "angular": "1.5.0",
+        "angular-aria": "1.5.0",
+        "angular-formly": "7.5.0",
+        "angular-formly-templates-bootstrap": "6.3.0",
+        "angular-ui-router": "0.2.18",
+        "api-check": "7.5.5",
+        "bootstrap": "3.3.6"
+    },
+    "devDependencies": {
+        "babel": "6.5.2",
+        "babel-core": "6.5.2",
+        "babel-loader": "6.2.3",
+        "babel-preset-es2015": "6.5.0",
+        "clean-webpack-plugin": "0.1.8",
+        "css-loader": "0.23.1",
+        "file-loader": "0.8.5",
+        "jshint": "2.9.1",
+        "jshint-loader": "0.8.3",
+        "less": "2.6.0",
+        "ng-annotate-webpack-plugin": "0.1.2",
+        "node-libs-browser": "1.0.0",
+        "style-loader": "0.13.0",
+        "url-loader": "0.5.7",
+        "webpack": "1.12.14"
+    }
 }

@@ -6,11 +6,9 @@ An accompanying blog post can be found at: http://scottaddie.com/2015/06/29/webp
 ##Project Setup
 1. Install the Webpack CLI and the Typings definitions manager at the system level as follows:
   `npm i -g webpack typings`
-2. Install the local project's npm packages as follows:
+2. Install the local project's npm packages and type definitions for Node.js as follows:
   `npm i`
-3. Install the type definitions for Node.js as follows:
-  `typings i`
-4. Build the project according to your desired mode as follows:
+3. Build the project according to your desired mode as follows:
   * Development Mode = `npm run dev-build`
   * Production Mode = `npm run dist-build`
-5. Open index.html in your browser of choice
+4. Open index.html in your browser of choice
