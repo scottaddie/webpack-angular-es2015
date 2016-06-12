@@ -1,6 +1,7 @@
 {
   "name": "webpackangular",
   "globalDevDependencies": {
-    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#aee0039a2d6686ec78352125010ebb38a7a7d743"
+    "node": "registry:dt/node#6.0.0+20160608110640",
+    "webpack": "registry:dt/webpack#1.12.9+20160523035535"
   }
 }
