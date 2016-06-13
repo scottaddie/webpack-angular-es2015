@@ -10,7 +10,7 @@
     "scripts": {
         "dev-build": "webpack -d --display-modules --progress",
         "dist-build": "webpack -p --display-modules --progress",
-        "install": "typings i"
+        "postinstall": "typings i"
     },
     "author": "Scott Addie",
     "license": "MIT",
