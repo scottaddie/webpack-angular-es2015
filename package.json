@@ -15,16 +15,15 @@
   "author": "Scott Addie",
   "license": "MIT",
   "dependencies": {
-    "angular": "1.5.0",
-    "angular-aria": "1.5.0",
-    "angular-formly": "7.5.0",
-    "angular-formly-templates-bootstrap": "6.3.0",
+    "angular": "1.5.8",
+    "angular-aria": "1.5.8",
+    "angular-formly": "8.4.0",
+    "angular-formly-templates-bootstrap": "6.4.0",
     "angular-ui-router": "0.2.18",
     "api-check": "7.5.5",
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.7"
   },
   "devDependencies": {
-    "babel": "6.5.2",
     "babel-core": "6.14.0",
     "babel-loader": "6.2.5",
     "babel-preset-es2015": "6.14.0",

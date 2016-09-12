@@ -1,7 +1,7 @@
 {
   "name": "webpackangular",
   "globalDevDependencies": {
-    "node": "registry:dt/node#6.0.0+20160608110640",
-    "webpack": "registry:dt/webpack#1.12.9+20160523035535"
+    "node-4": "registry:dt/node-4#4.0.0+20160909145701",
+    "webpack": "registry:dt/webpack#1.12.9+20160724112410"
   }
 }
